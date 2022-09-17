@@ -17,8 +17,11 @@ const Product = () => {
     setProductDetails([]);
     const res = await axios.get(`https://63189f2cf6b281877c71eab0.mockapi.io/products/${param.id}`);
     setProductDetails(res.data);
+    let newProdcut = [];
     for (let i = 0; i < 4; i++) {
-      setProduct((product) => [...product, { original: res.data.img[i], thumbnail: res.data.img[i] }]);
+      newProdcut = [...newProdcut, { original: res.data.img[i], thumbnail: res.data.img[i] }];
+      console.log(newProdcut);
+      setProduct(newProdcut);
     }
   };
   useEffect(() => {

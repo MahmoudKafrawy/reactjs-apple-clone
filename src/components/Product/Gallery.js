@@ -14,7 +14,7 @@ const Gallery = ({ product }) => {
           isRTL={false}
           showPlayButton={false}
           showNav={false}
-          disableThumbnailScroll={false}
+          disableThumbnailScroll={true}
           // renderRightNav={RightButton}
           // renderLeftNav={LeftButton}
           showFullscreenButton={false}

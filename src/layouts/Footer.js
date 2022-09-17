@@ -2,8 +2,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import footer1 from "../assets/appleLogo.png";
 import footer2 from "../assets/footer2.png";
-import footer3 from "../assets/footer2.png";
-import footer4 from "../assets/footer2.png";
+import footer3 from "../assets/footer3.png";
+import footer4 from "../assets/footer4.png";
 
 const Footer = () => {
   return (

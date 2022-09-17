@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import iphone13 from "../../assets/iphone13.png";
 
 const ImageSlider = () => {
   const [sliderImages, setSliderImages] = useState([]);
@@ -28,7 +29,7 @@ const ImageSlider = () => {
           {sliderImages.map((slide, index) => (
             <Carousel.Item key={index} interval={3000}>
               <div className="slider_test">
-                <img src={slide.img} alt="First slide" />
+                <img src={iphone13} alt="First slide" />
               </div>
             </Carousel.Item>
           ))}

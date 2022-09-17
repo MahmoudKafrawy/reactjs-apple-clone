@@ -3,9 +3,10 @@ import ImageGallery from "react-image-gallery";
 import { Fade } from "react-reveal";
 
 const Gallery = ({ product }) => {
+  console.log(product);
   return (
     <Fade>
-      <div className=" mt-5">
+      <div className="mt-5" style={{ height: "100%" }}>
         <ImageGallery
           items={product}
           defaultImage={product}
@@ -13,7 +14,7 @@ const Gallery = ({ product }) => {
           isRTL={false}
           showPlayButton={false}
           showNav={false}
-          disableThumbnailScroll={true}
+          disableThumbnailScroll={false}
           // renderRightNav={RightButton}
           // renderLeftNav={LeftButton}
           showFullscreenButton={false}

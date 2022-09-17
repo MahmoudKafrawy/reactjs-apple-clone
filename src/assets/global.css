@@ -50,6 +50,12 @@ html a{
         font-size: 15px;
         font-weight: 400;
     }
+    
+}
+@media (max-width:400px) {
+    .nav-link:nth-child(8){
+        display:none;
+    }
 }
 .list{
     margin: 0 100px 0 130px ;

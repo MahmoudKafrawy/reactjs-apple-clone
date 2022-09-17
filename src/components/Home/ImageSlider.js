@@ -29,6 +29,7 @@ const ImageSlider = () => {
           {sliderImages.map((slide, index) => (
             <Carousel.Item key={index} interval={3000}>
               <div className="slider_test">
+                {/* use static photo instead of api because ssl */}
                 <img src={iphone13} alt="First slide" />
               </div>
             </Carousel.Item>

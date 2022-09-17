@@ -59,7 +59,7 @@ const ExploreItems = () => {
               <Fade key={index}>
                 <div className="products">
                   <Link to={`/products/${product.id}`}>
-                    <img src={product.img[0]} />
+                    <img src={product.img[0]} style={{ width: "118px", height: "118px" }} />
                     <div className="products_name">{product.name}</div>
                     <div className="products_price d-flex justify-content-between">
                       <span> ${product.priceAfterdiscount.toFixed(2)}</span>
